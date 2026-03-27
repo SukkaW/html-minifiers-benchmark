@@ -1,6 +1,6 @@
 # HTML Minifiers Benchmarks
 
-Updated: 2026-03-26
+Updated: 2026-03-27
 
 This benchmark measures how well different tools minify real-world HTML pages.
 For every URL, the page is fetched and the same source HTML is passed to each minifier.
@@ -18,27 +18,27 @@ Higher is better.
 | Website                                                         | Source (KB) | [html-minifier-terser] | [html-minifier-next] | [htmlnano] |  [minify] | [minify-html] | [swc-html] |
 | --------------------------------------------------------------- | ----------: | ---------------------: | -------------------: | ---------: | --------: | ------------: | ---------: |
 | [alistapart.com](https://alistapart.com/)                       |          63 |                   7.6% |                11.5% |  **34.5%** |     11.1% |          8.7% |      11.5% |
-| [developer.mozilla.org](https://developer.mozilla.org/en-US/)   |         110 |                  38.0% |                41.8% |  **52.8%** |     40.2% |         40.1% |      40.7% |
-| [en.wikipedia.org](https://en.wikipedia.org/wiki/Main_Page)     |         225 |                   4.5% |             **7.3%** |   **7.3%** |      6.1% |          5.9% |       6.2% |
-| [css-tricks.com](https://css-tricks.com)                        |         171 |                   8.2% |                22.8% |  **28.8%** |     13.3% |          8.6% |      13.8% |
-| [stackoverflow.blog](https://stackoverflow.blog/)               |         141 |                   3.7% |             **7.2%** |       6.9% |      4.3% |          4.5% |       5.1% |
-| [edri.org](https://edri.org)                                    |          80 |                   7.7% |                13.7% |  **30.7%** |     12.3% |          8.2% |      12.8% |
+| [developer.mozilla.org](https://developer.mozilla.org/en-US/)   |         107 |                  38.1% |                41.9% |  **53.2%** |     40.3% |         40.2% |      40.8% |
+| [css-tricks.com](https://css-tricks.com)                        |         170 |                   8.4% |                23.1% |  **29.1%** |     13.6% |          8.8% |      14.1% |
+| [mastodon.social](https://mastodon.social/explore)              |          34 |                   3.1% |            **14.9%** |      14.7% |      5.8% |          5.2% |       7.2% |
+| [en.wikipedia.org](https://en.wikipedia.org/wiki/Main_Page)     |         230 |                   4.4% |             **7.2%** |       7.1% |      6.0% |          5.9% |       6.2% |
+| [leanpub.com](https://leanpub.com)                              |         359 |                   1.2% |             **8.9%** |       7.1% |      5.4% |          1.9% |       5.9% |
+| [home.cern](https://home.cern)                                  |         151 |                  37.1% |            **46.4%** |      40.2% |     38.9% |         39.5% |      40.3% |
 | [html.spec.whatwg.org](https://html.spec.whatwg.org/multipage/) |         149 |                  -3.9% |                 0.7% |      -2.6% |      0.3% |          0.2% |   **1.5%** |
-| [mastodon.social](https://mastodon.social/explore)              |          34 |                   3.0% |            **14.9%** |      14.7% |      5.8% |          5.2% |       7.1% |
-| [lafrenchtech.gouv.fr](https://lafrenchtech.gouv.fr/)           |         155 |                  13.2% |                17.8% |  **63.1%** |     16.9% |         13.8% |      17.4% |
-| [un.org](https://un.org/en/)                                    |         152 |                  14.2% |                22.4% |  **41.1%** |     19.9% |         15.1% |      17.4% |
+| [stackoverflow.blog](https://stackoverflow.blog/)               |         141 |                   3.8% |             **7.2%** |       6.9% |      4.3% |          4.5% |       5.1% |
 | [apple.com](https://apple.com/)                                 |         230 |                   8.6% |            **13.3%** |      11.4% |     10.3% |          9.5% |       9.8% |
-| [w3.org](https://w3.org/)                                       |          51 |                  18.9% |            **24.4%** |      23.2% |     24.3% |         20.3% |      24.0% |
-| [home.cern](https://home.cern)                                  |         151 |                  37.1% |            **46.4%** |      40.2% |     38.9% |         39.4% |      40.3% |
-| [eff.org](https://eff.org)                                      |          53 |                   8.9% |            **14.9%** |      11.0% |     13.6% |         11.5% |      13.5% |
-| [leanpub.com](https://leanpub.com)                              |         350 |                   1.2% |             **8.4%** |       6.6% |      4.9% |          1.9% |       5.3% |
-| [sitepoint.com](https://sitepoint.com)                          |         234 |                   0.7% |            **10.1%** |       9.7% |      6.2% |          1.0% |       5.6% |
-| [bbc.co.uk](https://bbc.co.uk)                                  |         708 |                   0.8% |             **7.4%** |       5.8% |      4.5% |          1.2% |       6.6% |
-| [weather.com](https://weather.com)                              |        1175 |                   0.2% |             **8.5%** |       8.2% |      8.3% |          0.4% |   **8.5%** |
-| [github.com](https://github.com/)                               |         554 |                   3.1% |            **17.5%** |      16.7% |      7.3% |          5.9% |       6.5% |
+| [edri.org](https://edri.org)                                    |          80 |                   7.7% |                13.7% |  **30.7%** |     12.3% |          8.2% |      12.8% |
+| [un.org](https://un.org/en/)                                    |         151 |                  14.3% |                22.6% |  **41.5%** |     20.1% |         15.3% |      17.5% |
+| [w3.org](https://w3.org/)                                       |          50 |                  18.9% |            **24.5%** |      23.3% |     24.4% |         20.3% |      24.1% |
+| [lafrenchtech.gouv.fr](https://lafrenchtech.gouv.fr/)           |         155 |                  13.2% |                17.8% |  **63.1%** |     16.9% |         13.8% |      17.4% |
+| [eff.org](https://eff.org)                                      |          53 |                   8.9% |            **14.9%** |      11.0% |     13.6% |         11.6% |      13.5% |
+| [sitepoint.com](https://sitepoint.com)                          |         234 |                   0.7% |            **10.1%** |       9.6% |      6.2% |          1.0% |       5.6% |
+| [bbc.co.uk](https://bbc.co.uk)                                  |         713 |                   0.8% |             **7.4%** |       5.8% |      4.6% |          1.2% |       6.6% |
+| [github.com](https://github.com/)                               |         553 |                   3.1% |            **17.5%** |      16.7% |      7.3% |          5.9% |       6.5% |
 | [faz.net](https://faz.net/aktuell/)                             |        1407 |                   3.2% |                 6.6% |  **11.7%** |      4.3% |          3.5% |       4.5% |
+| [weather.com](https://weather.com)                              |        2090 |                   0.1% |             **8.8%** |       8.7% |      8.7% |          0.2% |   **8.8%** |
 | [tc39.es](https://tc39.es/ecma262/)                             |        7318 |                   8.5% |            **11.1%** |       9.3% |      9.4% |          9.2% |      10.9% |
-| **Avg. minify rate**                                            |             |               **8.9%** |            **15.6%** |  **20.5%** | **12.5%** |     **10.2%** |  **12.8%** |
+| **Avg. minify rate**                                            |             |               **8.9%** |            **15.7%** |  **20.6%** | **12.6%** |     **10.2%** |  **12.9%** |
 
 New HTML minifiers are welcome!
 Please submit a PR to add a new minifier to the benchmark, or open an issue to request it.
